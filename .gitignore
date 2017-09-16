@@ -60,3 +60,6 @@ typings/
 # idea files
 .idea/*
 *.iml
+
+# webpack output
+static/bin/*
