@@ -3,5 +3,5 @@
 ## Setup
 npm install
 
-## Developmnt
+## Development
 npm start
