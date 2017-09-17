@@ -2,6 +2,7 @@ var m = require("mithril");
 var quoteModel = require("../models/Quote.js");
 
 module.exports = {
+    oninit: quoteModel.loadList,
     view: function(){
 
         // render quote list items
