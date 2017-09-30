@@ -1,3 +1,5 @@
+# config file generated during compile time
+src/models/Config.js
 # Logs
 logs
 *.log

@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
-    "start": "webpack src/index.js static/bin/app.js -d --watch",
-    "build": "webpack src/index.js static/bin/app.js -p",
-    "heroku-postbuild": "webpack src/index.js static/bin/app.js"
+    "start": "cp src/config/config-dev.js src/models/Config.js && webpack src/index.js static/bin/app.js -d --watch",
+    "build": "cp src/config/config-prod.js src/models/Config.js && webpack src/index.js static/bin/app.js -p",
+    "heroku-postbuild": "cp src/config/config-prod.js src/models/Config.js && webpack src/index.js static/bin/app.js"
   },
   "keywords": [],
   "author": "Gernot Pointner",
